@@ -27,7 +27,9 @@ while True:
         break
     else:
         clusters.clear()
-        centroid = mean
+        centroid = list()
+        for ele in mean:
+            centroid.append(ele)
 print("got same means of two iterations so stopped")
 print('final clusters')
 print(clusters)
